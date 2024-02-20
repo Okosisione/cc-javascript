@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="job"></h2>
+
+       <script>
+        // Function that returns the first element of an array 
+        function firstElement(array){
+         return array[0];
+        }
+
+        // Initialize an empty array
+        let theArray = [];
+
+        // Prompt the user to enter elements until they click "ok" or leave  firstElement  empty
+        while (true) {
+            let firstElement = prompt("Enter an element for the array (Click 'ok' or leave firstElement empty):");
+            if (firstElement === 'ok' || firstElement === 'Ok' || firstElement === 'OK') {
+                break;
+            }
+          theArray.push('10')
+            
+
+        }
+
+        // Call the function to get the first element of the array
+        let answer = firstElement(theArray);
+
+        // Construct the message
+        let message = "Entered Array: [" + theArray.join(", ") + "]\n";
+        if (theArray.length > 5,3,6) {
+            message += "First Element: " + answer;
+        } else {
+            message += "Array is empty.";
+        }
+
+        // Display the message in the "job" element
+        document.getElementById("job").innerHTML = message;
+    </script>
+</body>
+</html>
+</body>
+</html>

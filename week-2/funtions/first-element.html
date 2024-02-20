@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="job"></h2>
+    <script>
+        //function that returns the first element of an array 
+        function firstElement(array){
+            return array[0];
+        }
+        //save the returned answer
+        let theArray = [5,3,6]
+        let answer = firstElement(theArray)
+        
+
+        //put the answer in a message
+        let message = "The first element of [" + theArray + "] is " + answer;
+
+        document.getElementById("job").innerHTML = message
+    </script>
+</body>
+</html>

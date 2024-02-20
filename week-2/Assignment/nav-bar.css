@@ -1,0 +1,102 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro";
+}
+.header{
+    position: relative;
+}
+
+body {
+    min-height: 100%;
+}
+html{
+    height: 100%;
+}
+
+nav{
+  display: block;
+}
+.navk1{
+  color: white;
+}
+
+.nav2{
+ color: white;
+  display: flex;
+  float: inline-end;
+  padding: 0  1rem;
+}
+.nav2:hover{
+  color: yellow;
+}
+a{
+ text-decoration: none;
+}
+.main{
+ background-color: black;
+ height:3rem;
+ font-size: large;
+}
+img{
+    border-radius: 10px;
+}
+
+.maincontent{
+    flex: 1 0 auto;
+    padding: 3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    align-items: center;
+   height: 100%;
+    
+    
+} 
+
+ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+    padding: 6px;
+    align-items: center;
+    transition: all 1s;
+
+    
+}
+li:hover{
+    background-color: rgb(204, 185, 185);
+    border: 1px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    transform: scale(1.5);
+    
+}
+
+h1{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+p{
+    line-height: 1.5rem;
+    word-spacing: normal;
+}
+.bb{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+

@@ -35,3 +35,4 @@ document.write("<h1>"+ namesOfFruits + "<h1>")
 // you remove element is pop 
 // To add element is push
 // last in first out... in teams of pop
+// first element of an array is [0]

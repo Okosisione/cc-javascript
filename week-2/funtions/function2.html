@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h3 id="farm"></h3>
+    <script>
+        // the farmer inputs animals here
+        let chickensToday = Number(prompt("Enter the number of chicken today:"));
+        let cowsToday = Number(prompt("Enter the number of cows today:"));
+        let pigsToday =Number(prompt("Enter the number of pigs today;"))
+
+            //Function to calculate the number of legs...=0 is by default to be save..if the farmer does not type zero by himself
+          function subTotal(numberOfChicken = 0, numberOfCow = 0, numberOfPigs =0){
+            let answer = (numberOfChicken * 2) + (numberOfCow * 4) + (numberOfPigs * 4);
+            return answer;
+         }
+         
+         //you can change it to the animals in the farm names
+         //call the function to calculate and save the total number of legs in the message.
+         let realValues = subTotal(3, 8, 5);
+         let message = " the total number of legs of chickens, cows, and pigs is " + realValues;
+
+            //write the message inside the h3 element
+         document.getElementById("farm").innerHTML = message;
+         
+    </script>
+</body>
+</html>

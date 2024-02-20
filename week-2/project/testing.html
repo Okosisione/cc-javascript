@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 id="tochi"></h2>
+
+    <script>
+        function firstElement(array) {
+            return array[0];
+        }
+
+        let theArray = [];
+        
+        while (true) {
+            let userInput = prompt("Enter an element for the array (Click 'ok' or leave firstElement empty):");
+            if (!userInput || userInput === 'ok') {
+                break;
+            }
+            theArray.push(userInput);
+        }
+        
+        let answer = firstElement(theArray);
+        
+        let message;
+        if (theArray.length > 0) {
+            message = "The entered array is [" + theArray.join(", ") + "].";
+            message += "<br> The first element of the array is " + answer + ".";
+        } else {
+            message = "The array is empty.";
+        }
+        
+        document.getElementById("tochi").innerHTML = message;
+    </script>
+</body>
+</html>
