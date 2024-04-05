@@ -15,9 +15,9 @@ html{
     height: 100%;
 }
 
-nav{
+.nav{
   display: block;
-}
+} 
 .navk1{
   color: white;
 }
@@ -25,7 +25,7 @@ nav{
 .nav2{
  color: white;
   display: flex;
-  float: inline-end;
+   float: inline-end; 
   padding: 0  1rem;
 }
 .nav2:hover{
@@ -88,6 +88,10 @@ h1{
     font-optical-sizing: auto;
     font-weight:weight;
     font-style:normal;
+}
+
+H1:hover{
+    color: rgb(176, 176, 59);
 }
 p{
     line-height: 1.5rem;
